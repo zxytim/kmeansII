@@ -1,0 +1,4 @@
+What is K-Means II
+==================
+K-Means II is a fast algorithm to solve the K-Means problem.
+see ```Bahmani, B., Moseley, B., Vattani, A., Kumar, R., & Vassilvitskii, S. (2012).  Scalable k-means++. Proceedings of the VLDB Endowment, 5(7), 622-633.```.
