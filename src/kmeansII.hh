@@ -1,6 +1,6 @@
 /*
  * $File: kmeansII.hh
- * $Date: Mon Sep 09 13:58:10 2013 +0000
+ * $Date: Sat Dec 07 21:03:07 2013 +0800
  * $Author: Xinyu Zhou <zxytim[at]gmail[dot]com>
  */
 
@@ -15,13 +15,15 @@ class KMeansIISolver : public KMeansSolver {
 	public:
 		/**
 		 * oversampling factor and number of parallel workers.
-		 * see **Scalable K-Means++** for explanation, although the definition
+		 * see [1] for explanation, although the definition
 		 * is not quite the same: l_orig = l_here * K
 		 *
 		 * number of rounds for sampling is not presented here, as
 		 * it is substituted by sampling_size_factor, by which means as long as
 		 * the number of points sampled is less than size_factor * K,
 		 * we'll continue sampling.
+		 * [1] Bahmani, B., Moseley, B., Vattani, A., Kumar, R., & Vassilvitskii, S. (2012).
+		 *	   Scalable k-means++. Proceedings of the VLDB Endowment, 5(7), 622-633.
 		 */
 		KMeansIISolver(int concurrency, real_t oversampling_factor = 2.0, real_t sampling_size_factor = 2.0);
 
